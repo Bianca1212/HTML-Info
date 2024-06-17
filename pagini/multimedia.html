@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <title>Elemente multimedia</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <ul class="navigation">
+      <li><a href="formular.html">Formular</a></li>
+      <li><a href="tabele.html">Tabele</a></li>
+      <li><a href="escape.html">Escape</a></li>
+      <li><a href="../index.html">Acasa</a></li>
+      <li><a href="../despre.html">Despre</a></li>
+      <li>
+        <a href="css.html">CSS</a>
+      </li>
+    </ul>
+    <h1>Elemente multimedia HTML</h1>
+    <h2>Elementul &lt;audio&gt;</h2>
+    <p>
+      Elementul &lt;audio&gt; este folosit pentru a adăuga fișiere audio paginii
+      tale web. Următorul exemplu arată o simplă utilizare a lui, cu ajutorul
+      atributului src:
+    </p>
+    <!-- <audio src="fișier-audio.mp3"></audio> -->
+    <p>
+      O altă metodă de a declara &lt;audio&gt; este folosind două sau mai multe
+      elemente &lt;source&gt;. Fiecare astfel de element va trebui să conțină
+      atributul src împreună cu atributul type pentru a specifica formatul
+      fișierului.
+    </p>
+    <ul>
+      Atributele elementului &lt;audio&gt;
+    </ul>
+    <li>src: indică locația fișierului audio;</li>
+    <li>type: specifică tipul fișierului audio.</li>
+    <li>
+      controls: dacă acest atribut este prezent, browser-ul va oferi funcții
+      pentru a permite user-ului să dea play/pause, să controleze volumul, etc.
+    </li>
+    <h2>Elementul &lt;video&gt;</h2>
+    <p>
+      Elementul &lt;video&gt; ne permite adăugarea unui video pe pagina noastră.
+      Cel mai simplu mod de utilizare este - similar ca la audio - prin
+      atributul src.
+    </p>
+    <!-- <video src="fișier-video.mp4"></video> -->
+    <p>
+      La fel ca si la audio, putem specifica mai multe surse ale clipului video
+      folosind tagul &lt;source&gt;.
+    </p>
+    <ul>
+      Atributele elementului video
+    </ul>
+    <p>
+      Trebuie să știi că toate atributele elementului audio menționate mai sus
+      sunt valabile și pentru clipuri video. Pe lângă acestea, unui video putem
+      să-i specificăm și:
+    </p>
+    <ul>
+      <li>width: specifica lățimea playerului video exprimată în pixeli;</li>
+      <li>height: specifica înălțimea playerului video exprimată în pixeli;</li>
+      <li>
+        muted: prin acest atribut browser-ul va initializa clipul audio cu volum
+        0. Acesta poate fi schimbat de utilizator daca atributul controls este
+        specificat;
+      </li>
+      <li>
+        autoplay: dacă acest atribut este prezent, browser-ul va da "play" la
+        audio imediat ce acesta este încărcat în pagină.
+      </li>
+    </ul>
+    <h3>Subtitrări sau Captions</h3>
+    <p>
+      Unui element video putem să-i atașăm subtitrări sau captions. Mai întâi
+      creem un fișier în format .vtt unde vom configura timpii subitrării, iar
+      apoi îl legăm de video prin elementul &lt;track&gt;.
+    </p>
+  </body>
+</html>
