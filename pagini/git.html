@@ -1,0 +1,198 @@
+<html>
+  <head>
+    <title>Git</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <ul class="navigation">
+      <li><a href="../index.html">Acasa</a></li>
+      <li><a href="../despre.html">Despre</a></li>
+      <li><a href="tabele.html">Tabele</a></li>
+      <li><a href="multimedia.html">Multimedia</a></li>
+      <li><a href="escape.html">Escape</a></li>
+      <li>
+        <a href="css.html">CSS</a>
+      </li>
+      <li><a href="github.html">GitHub</a></li>
+    </ul>
+    <h2>Git: O privire de ansamblu</h2>
+    <div class="flex-container">
+      <p>
+        Git este un sistem de control al versiunilor distribuit, utilizat pe
+        scară largă pentru a gestiona proiectele de software. Spre deosebire de
+        sistemele centralizate tradiționale, Git stochează un istoric complet al
+        modificărilor fiecărui fișier din cadrul depozitului tău local, oferind
+        o flexibilitate și o fiabilitate sporite.
+      </p>
+      <img class="git-image" src="../imagini/git.png" />
+    </div>
+    <h4>Caracteristici cheie ale Git:</h4>
+    <ul>
+      <li>
+        <b>Urmărirea versiunilor:</b> Urmărește fiecare modificare adusă
+        fișierelor din proiectul tău, creând un istoric detaliat al dezvoltării
+        acestuia.
+      </li>
+      <li>
+        <b>Ramuri (Branch-uri):</b> Permite crearea de fluxuri de lucru
+        paralele, experimentând noi funcții sau remediind erori fără a afecta
+        codul principal.
+      </li>
+      <li>
+        <b>Contopire (Merge):</b> Combină cu ușurință modificările din diferite
+        ramuri, rezolvând conflictele dintre ele.
+      </li>
+      <li>
+        <b>Colaborare:</b> Permite mai multor dezvoltatori să lucreze simultan
+        la același proiect, facilitând comunicarea și contribuția.
+      </li>
+      <li>
+        <b>Controlul local:</b> Oferă un depozit complet al proiectului pe
+        computerul tău, permițând lucrul offline și accesul la istoric chiar și
+        fără conexiune la internet.
+      </li>
+      <li>
+        <b>Performanță:</b> Este rapid și eficient, optimizat pentru proiecte de
+        mari dimensiuni.
+      </li>
+      <li>
+        <b>Open-source:</b> Este un software liber și open-source, cu o
+        comunitate vastă de utilizatori și contribuitori.
+      </li>
+    </ul>
+    <h4>Beneficiile utilizării Git:</h4>
+    <ul>
+      <li>
+        <b>Menține controlul:</b> Urmărește modificările, revine la versiuni
+        anterioare și fii mereu la curent cu stadiul proiectului.
+      </li>
+      <li>
+        <b>Crește calitatea codului:</b> Urmărește evoluția codului, identifică
+        erorile mai rapid și implementează practici de codare mai bune.
+      </li>
+      <li>
+        <b>Protejează munca:</b> Previne pierderea datelor prin stocarea sigură
+        a istoricului proiectelor și a backup-urilor locale.
+      </li>
+      <li>
+        <b>Simplifică fluxurile de lucru:</b> Automatizează sarcinile
+        repetitive, implementează fluxuri de lucru personalizate și
+        îmbunătățește eficiența generală.
+      </li>
+    </ul>
+    <h4>Utilizări comune ale Git:</h4>
+    <ul>
+      <li>Dezvoltare software</li>
+      <li>Managementul proiectelor</li>
+      <li>Urmărirea documentelor</li>
+      <li>Stocare de configurații</li>
+    </ul>
+    <h4>Exemple de utilizare a terminalului Git</h4>
+    <p>
+      Iată câteva exemple de comenzi Git comune pe care le puteți utiliza în
+      terminal:
+    </p>
+    <div class="flex-container">
+      <p><b>Inițializare</b></p>
+      <ul class="git-commands">
+        <li>
+          <b>git init</b> -> Inițializează un nou depozit Git în directorul
+          curent.
+        </li>
+        <li>
+          <b>git clone</b> &lt;url&gt; -> Cloneză un depozit Git existent de la
+          o adresă URL specificată.
+        </li>
+      </ul>
+    </div>
+    <div class="flex-container">
+      <p><b>Adăugarea și confirmarea modificărilor:</b></p>
+      <ul class="git-commands">
+        <li>
+          <b>git add &lt;nume_fișier&gt; </b> -> Adaugă fișierele specificate la
+          stadiul de indexare pentru următoarea confirmare.
+        </li>
+        <li>
+          <b>git add</b> -> Adaugă toate fișierele modificate din directorul
+          curent la stadiul de indexare.
+        </li>
+        <li>
+          <b>git commit -m "Mesajul dumneavoastră"</b> -> Comite modificările
+          indexate cu un mesaj descriptiv.
+        </li>
+      </ul>
+    </div>
+    <div class="flex-container">
+      <p><b>Vizualizarea stării depozitului: </b></p>
+      <ul class="git-commands">
+        <li>
+          <b>git status:</b> -> Afișează starea fișierelor din directorul de
+          lucru, indicând care fișiere sunt modificate, indexate sau neurmărite
+        </li>
+        <li>
+          <b>git log:</b> -> Afișează istoricul comiterilor din depozitul Git.
+        </li>
+      </ul>
+    </div>
+    <div class="flex-container">
+      <p><b>Gestionarea ramurilor: </b></p>
+      <ul class="git-commands">
+        <li>
+          <b>git branch:</b> -> Afișează o listă cu ramurile din depozitul Git.
+        </li>
+        <li>
+          <b>git checkout &lt;nume_ramură&gt;:</b> -> Schimbă la o ramură
+          specificată.
+        </li>
+        <li>
+          <b>git branch &lt;nume_ramură&gt;:</b> -> Creează o nouă ramură numită
+          &lt;nume_ramură&gt;.
+        </li>
+        <li>
+          <b>git merge &lt;nume_ramură&gt;:</b> Integrează modificările dintr-o
+          altă ramură în ramura curentă.
+        </li>
+      </ul>
+    </div>
+    <div class="flex-container">
+      <p><b>Obținerea modificărilor din alte depozite: </b></p>
+      <ul class="git-commands">
+        <li>
+          <b>git fetch:</b> -> Descarcă cele mai recente modificări din
+          depozitul Git la distanță.
+        </li>
+        <li>
+          <b>git pull:</b> -> Descarcă cele mai recente modificări din depozitul
+          Git la distanță și le integrează în ramura curentă.
+        </li>
+      </ul>
+    </div>
+    <div class="flex-container">
+      <p><b>Depanare: </b></p>
+      <ul class="git-commands">
+        <li><b>git reset HEAD~1:</b> -> Anulează ultima confirmare.</li>
+        <li>
+          <b>git reflog:</b> -> Afișează istoricul comenzilor Git executate.
+        </li>
+      </ul>
+    </div>
+    <p><b>Resurse suplimentare:</b></p>
+    <ul>
+      <li>
+        Documentația oficială Git:
+        <a href="https://git-scm.com/doc">https://git-scm.com/doc</a>
+      </li>
+      <li>
+        Git:
+        <a href="https://www.atlassian.com/git/tutorials"
+          >https://www.atlassian.com/git/tutorials</a
+        >
+      </li>
+      <li>
+        Comenzi Git comune:<a href="https://www.git-scm.com/downloads"
+          >https://www.git-scm.com/downloads</a
+        >
+      </li>
+    </ul>
+  </body>
+</html>

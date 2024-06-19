@@ -5,36 +5,61 @@
   </head>
   <body>
     <ul class="navigation">
+      <li><a href="../index.html">Acasa</a></li>
+      <li><a href="../despre.html">Despre</a></li>
       <li><a href="formular.html">Formular</a></li>
       <li><a href="tabele.html">Tabele</a></li>
       <li><a href="multimedia.html">Multimedia</a></li>
-      <li><a href="../index.html">Acasa</a></li>
-      <li><a href="../despre.html">Despre</a></li>
       <li>
         <a href="css.html">CSS</a>
       </li>
+      <li><a href="git.html">Terminal</a></li>
+      <li><a href="github.html">GitHub</a></li>
     </ul>
-    <h1>Escape HTML</h1>
-    <p>Escaping HTML characters in a string means replacing the:</p>
-    <ul>
-      <li>less than symbol (<) with &lt;</li>
-      <li>greater than symbol (>) with &gt;</li>
-      <li>double quotes (") with &quot;</li>
-      <li>single quote (’) with &#39;</li>
-      <li>ampersand (&) with &amp;</li>
-      <h1>Unescape HTML</h1>
-    </ul>
-
+    <h1>Elementele de escape în HTML</h1>
     <p>
-      Unescaping HTML in a string does the reverse of what we have done above,
-      by replacing:
+      Elementele de escape în HTML Elementele de escape în HTML sunt utilizate
+      pentru a reprezenta caractere speciale sau secvențe de caractere care ar
+      putea fi interpretate greșit de browser ca markup HTML. Acest lucru ajută
+      la prevenirea afișării incorecte a textului și la asigurarea securității
+      codului HTML.
     </p>
+    <h3>Ce caractere au nevoie de escape?</h3>
+    <p>În general, următoarele caractere au nevoie de escape în HTML:</p>
     <ul>
-      <li>&lt; with <</li>
-      <li>&gt; with ></li>
-      <li>&quot; with "</li>
-      <li>&#39; with '</li>
-      <li>&amp; with &</li>
+      <li>< (semnul mai mic)</li>
+      <li>> (semnul mai mare)</li>
+      <li>& (ampersand)</li>
+      <li>" (ghilimele duble)</li>
+      <li>' (apostrof)</li>
     </ul>
+    <h3>Cum se realizează acest lucru?</h3>
+    <p>Există două metode principale:</p>
+    <div>
+      <p><b>1. Entități HTML:</b></p>
+      <p>
+        Fiecare caracter special are o entitate HTML corespunzătoare care poate
+        fi utilizată pentru a-l reprezenta. De exemplu, entitatea HTML pentru <
+        este &lt;, iar entitatea HTML pentru > este &gt;.
+      </p>
+      <p><b>Exemplu:</b></p>
+      <img src="../escape-1.png" />
+    </div>
+    <div>
+      <p><b>2. Referințe numerice caractere:</b></p>
+      <p>
+        Puteți utiliza referințe numerice caractere pentru a reprezenta
+        caractere speciale. Există două tipuri de referințe numerice caractere:
+      </p>
+      <!-- <ul>
+        <li><b>Referințe numerice decimale:</b> 
+          Încep cu &# urmat de codul zecimal al caracterului. De exemplu, codul zecimal pentru < este 60, 
+          deci referința numerică zecimală pentru < este &#60;.</li>
+          <li><b>Referințe numerice hexazecimale:</b> Încep cu &#x urmat de codul hexadecimal al caracterului. 
+            De exemplu, codul hexadecimal pentru < este 3C, deci referința numerică hexadecimală pentru < este &#x3C;.</li>
+      </ul> -->
+      <p><b>Exemplu:</b></p>
+      <img src="../escape-2.png" />
+    </div>
   </body>
 </html>

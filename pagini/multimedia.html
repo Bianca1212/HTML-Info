@@ -5,75 +5,94 @@
   </head>
   <body>
     <ul class="navigation">
+      <li><a href="../index.html">Acasa</a></li>
+      <li><a href="../despre.html">Despre</a></li>
       <li><a href="formular.html">Formular</a></li>
       <li><a href="tabele.html">Tabele</a></li>
       <li><a href="escape.html">Escape</a></li>
-      <li><a href="../index.html">Acasa</a></li>
-      <li><a href="../despre.html">Despre</a></li>
       <li>
         <a href="css.html">CSS</a>
       </li>
+      <li><a href="git.html">Terminal</a></li>
+      <li><a href="github.html">GitHub</a></li>
     </ul>
     <h1>Elemente multimedia HTML</h1>
-    <h2>Elementul &lt;audio&gt;</h2>
     <p>
-      Elementul &lt;audio&gt; este folosit pentru a adăuga fișiere audio paginii
-      tale web. Următorul exemplu arată o simplă utilizare a lui, cu ajutorul
-      atributului src:
+      HTML (HyperText Markup Language) permite includerea de conținut
+      multimedia, cum ar fi imagini, videoclipuri și sunet, în paginile web.
+      Deși HTML nu are capacități multimedia native, oferă elemente specifice
+      care permit integrarea acestor tipuri de conținut cu ajutorul unor fișiere
+      externe sau al unor playere integrate.
     </p>
-    <!-- <audio src="fișier-audio.mp3"></audio> -->
-    <p>
-      O altă metodă de a declara &lt;audio&gt; este folosind două sau mai multe
-      elemente &lt;source&gt;. Fiecare astfel de element va trebui să conțină
-      atributul src împreună cu atributul type pentru a specifica formatul
-      fișierului.
-    </p>
+    <h3>Elemente multimedia comune în HTML:</h3>
     <ul>
-      Atributele elementului &lt;audio&gt;
-    </ul>
-    <li>src: indică locația fișierului audio;</li>
-    <li>type: specifică tipul fișierului audio.</li>
-    <li>
-      controls: dacă acest atribut este prezent, browser-ul va oferi funcții
-      pentru a permite user-ului să dea play/pause, să controleze volumul, etc.
-    </li>
-    <h2>Elementul &lt;video&gt;</h2>
-    <p>
-      Elementul &lt;video&gt; ne permite adăugarea unui video pe pagina noastră.
-      Cel mai simplu mod de utilizare este - similar ca la audio - prin
-      atributul src.
-    </p>
-    <!-- <video src="fișier-video.mp4"></video> -->
-    <p>
-      La fel ca si la audio, putem specifica mai multe surse ale clipului video
-      folosind tagul &lt;source&gt;.
-    </p>
-    <ul>
-      Atributele elementului video
-    </ul>
-    <p>
-      Trebuie să știi că toate atributele elementului audio menționate mai sus
-      sunt valabile și pentru clipuri video. Pe lângă acestea, unui video putem
-      să-i specificăm și:
-    </p>
-    <ul>
-      <li>width: specifica lățimea playerului video exprimată în pixeli;</li>
-      <li>height: specifica înălțimea playerului video exprimată în pixeli;</li>
       <li>
-        muted: prin acest atribut browser-ul va initializa clipul audio cu volum
-        0. Acesta poate fi schimbat de utilizator daca atributul controls este
-        specificat;
+        <b>Imagini:</b> Elementul &lt;img&gt; este utilizat pentru a include o
+        imagine.
       </li>
       <li>
-        autoplay: dacă acest atribut este prezent, browser-ul va da "play" la
-        audio imediat ce acesta este încărcat în pagină.
+        <b>Videoclipuri:</b> Elementul &lt;video&gt; permite integrarea unui
+        videoclip.
+      </li>
+      <li>
+        <b>Audio:</b> Elementul &lt;audio&gt; este utilizat pentru a include un
+        fișier audio.
+      </li>
+      <li>
+        <b>Obiect:</b> Elementul &lt;object&gt; oferă o modalitate mai generică
+        de a integra conținut multimedia.
       </li>
     </ul>
-    <h3>Subtitrări sau Captions</h3>
-    <p>
-      Unui element video putem să-i atașăm subtitrări sau captions. Mai întâi
-      creem un fișier în format .vtt unde vom configura timpii subitrării, iar
-      apoi îl legăm de video prin elementul &lt;track&gt;.
-    </p>
+    <h3>Atribute importante:</h3>
+    <ul>
+      <li><i>src:</i> Specifică calea către fișierul multimedia.</li>
+      <li>
+        <i>alt:</i> Definește un text alternativ pentru conținutul multimedia.
+      </li>
+      <li>
+        <i>width și height:</i> Definiți lățimea și înălțimea elementului
+        multimedia.
+      </li>
+      <li>
+        <i>controls:</i> Adaugă controale de redare pentru videoclipuri și
+        audio.
+      </li>
+      <li><i>autoplay:</i> Redă automat conținutul la încărcarea paginii.</li>
+      <li>
+        <i>loop:</i> Repetă redarea conținutului multimedia la finalizare.
+      </li>
+    </ul>
+    <h3>Exemple de utilizare:</h3>
+    <div class="flex-container">
+      <p><b>Includerea unei imagini:</b></p>
+      <img src="../css-img.png" />
+    </div>
+    <div class="flex-container">
+      <p><b>Integrarea unui videoclip:</b></p>
+      <img src="../css-video.png" />
+    </div>
+    <div class="flex-container">
+      <p><b>Redarea unui fișier audio:</b></p>
+      <img src="../css-audio.png" />
+    </div>
+    <h3>Considerații suplimentare</h3>
+    <ul>
+      <li>
+        <b>Formate multimedia:</b> Asigurați-vă că utilizați formate compatibile
+        cu browserele moderne.
+      </li>
+      <li>
+        <b>Accesibilitate:</b> Oferiți text alternativ și descrieri detaliate
+        pentru a face pagina dvs. web accesibilă.
+      </li>
+      <li>
+        <b>Experiența utilizatorului:</b> Testați elementele multimedia pe
+        diferite dispozitive și conexiuni.
+      </li>
+      <li>
+        <b>Performanță:</b> Optimizați dimensiunea fișierelor multimedia pentru
+        a reduce timpii de încărcare.
+      </li>
+    </ul>
   </body>
 </html>
