@@ -4,281 +4,273 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <ul class="navigation">
+    <!-- <img src="logo.png" class="logo" /> -->
+    <nav>
+      <ul class="navigation">
+        <li>
+          <a href="despre.html">Despre</a>
+        </li>
+        <li>
+          <a href="/pagini/tabele.html">Tabele</a>
+        </li>
+        <li>
+          <a href="/pagini/formular.html">Formulare</a>
+        </li>
+        <li>
+          <a href="pagini/multimedia.html">Multimedia</a>
+        </li>
+        <li>
+          <a href="pagini/escape.html">Escape</a>
+        </li>
+        <li>
+          <a href="pagini/css.html">CSS</a>
+        </li>
+        <li>
+          <a href="pagini/git.html">Terminal</a>
+        </li>
+        <li>
+          <a href="pagini/github.html">GitHub</a>
+        </li>
+      </ul>
+    </nav>
+    <h2>HTML: O privire de ansamblu</h2>
+    <section>
+      <h3>Ce este HTML?</h3>
+      <div class="flex-container">
+        <p>
+          HyperText Markup Language (HTML) este un limbaj de markup standard
+          utilizat pentru crearea de pagini web. Definește structura și
+          conținutul paginilor web, permițând browserelor web să le afișeze
+          corect. HTML este un limbaj bazat pe text care utilizează etichete
+          pentru a defini diferite elemente ale unei pagini web, cum ar fi
+          titluri, paragrafe, imagini, linkuri și multe altele.
+        </p>
+        <img class="html-image" src="imagini/html.png" />
+      </div>
+      <h3>Cum funcționează HTML?</h3>
+      <p>
+        Un fișier HTML este un document text care conține etichete HTML și
+        conținut textual. Etichetele HTML sunt înconjurate de paranteze
+        unghiulare (< >) și descriu tipul de element și pot include atribute
+        care oferă informații suplimentare despre element. De exemplu, eticheta
+        &lt;p&gt; definește un paragraf, iar eticheta &lt;img /&gt; definește o
+        imagine. Browserul web interpretează etichetele HTML și afișează
+        conținutul paginii în consecință.
+      </p>
+    </section>
+    <section>
+      <h3>Tipuri de tag-uri HTML:</h3>
+      <p>Există două tipuri principale de tag-uri HTML:</p>
+      <ol>
+        <li>
+          <b>Tag-uri de container:</b> Acestea definesc un bloc de conținut și
+          au un tag de deschidere și unul de închidere. De exemplu, &lt;p&gt;
+          definește un paragraf de text, iar &lt;table&gt; definește un tabel.
+        </li>
+        <li>
+          <b>Tag-uri autoînchise:</b> Acestea servesc un scop specific și nu
+          necesită un tag de închidere. De exemplu, &lt;img&gt; definește o
+          imagine, iar &lt;br&gt; introduce o ruptură de linie.
+        </li>
+      </ol>
+      <h3>Exemple de etichete HTML comune:</h3>
+      <ul>
+        <li>
+          <b
+            ><a href="https://www.w3schools.com/tags/tag_html.asp"
+              >&lt;html&gt;</a
+            ></b
+          >: Definește rădăcina documentului HTML.
+        </li>
+        <li>
+          <b
+            ><a href="https://www.w3schools.com/tags/tag_head.asp"
+              >&lt;head&gt;</a
+            ></b
+          >
+          Conține informații meta despre pagină, cum ar fi titlul și stilul.
+        </li>
+        <li>
+          <b
+            ><a href="https://www.w3schools.com/tags/tag_body.asp"
+              >&lt;body&gt;</a
+            ></b
+          >
+          Conține conținutul principal al paginii web, vizibil utilizatorului.
+        </li>
+        <li>
+          <b
+            ><a href="https://www.w3schools.com/tags/tag_header.asp"
+              >&lt;h1&gt; până la &lt;h6&gt;</a
+            ></b
+          >
+          Definiți titluri de diferite niveluri.
+        </li>
+        <li>
+          <b
+            ><a href="https://www.w3schools.com/tags/tag_p.asp">&lt;p&gt;</a></b
+          >
+          Definește un paragraf de text.
+        </li>
+        <li>
+          <b
+            ><a href="https://www.w3schools.com/tags/tag_img.asp"
+              >&lt;img&gt;</a
+            ></b
+          >
+          Definește o imagine.
+        </li>
+        <li>
+          <b
+            ><a href="https://www.w3schools.com/tags/tag_a.asp">&lt;a&gt;</a></b
+          >
+          Definește un hyperlink.
+        </li>
+        <li>
+          <b
+            ><a href="https://www.w3schools.com/tags/tag_ul.asp"
+              >&lt;ul&gt;</a
+            ></b
+          >
+          Definește o listă neordonată.
+        </li>
+        <li>
+          <b
+            ><a href="https://www.w3schools.com/tags/tag_ol.asp"
+              >&lt;ol&gt;</a
+            ></b
+          >
+          Definește o listă ordonată.
+        </li>
+        <li>
+          <b
+            ><a href="https://www.w3schools.com/tags/tag_table.asp"
+              >&lt;table&gt;</a
+            ></b
+          >
+          Definește un tabel.
+        </li>
+        <li>
+          <b
+            ><a href="https://www.w3schools.com/tags/tag_tr.asp"
+              >&lt;tr&Gt;:</a
+            ></b
+          >
+          Definește un rând de tabel.
+        </li>
+        <li>
+          <b
+            ><a href="https://www.w3schools.com/tags/tag_th.asp"
+              >&lt;th&gt;:</a
+            ></b
+          >
+          Definește o celulă de antet de tabel.
+        </li>
+        <li>
+          <b
+            ><a href="https://www.w3schools.com/tags/tag_td.asp"
+              >&lt;td&gt;:</a
+            ></b
+          >
+          Definește o celulă de date de tabel.
+        </li>
+        <li>
+          <b
+            ><a href="https://www.w3schools.com/tags/tag_br.asp"
+              >&lt;br&gt;:</a
+            ></b
+          >
+          Introduce o ruptură de linie.
+        </li>
+        <li>
+          <b
+            ><a href="https://www.w3schools.com/tags/tag_hr.asp"
+              >&lt;hr&gt;:</a
+            ></b
+          >
+          Introduce o linie orizontală.
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h3>Atributele tag-urilor HTML:</h3>
+      <p>
+        Atributele tag-urilor HTML oferă informații suplimentare despre
+        elementul respectiv. Ele sunt definite ca perechi nume-valoare în
+        interiorul tag-ului de deschidere. De exemplu, eticheta &lt;img&gt;
+        poate avea un atribut src care specifică URL-ul imaginii, iar eticheta
+        &lt;a&gt; poate avea un atribut href care specifică URL-ul
+        hyperlink-ului.
+      </p>
+      <h3>Exemple de atribute HTML comune:</h3>
+      <ul>
+        <li>
+          src: Specifică URL-ul unei resurse, cum ar fi o imagine sau un script.
+        </li>
+        <li>href: Specifică URL-ul unui hyperlink.</li>
+        <li>
+          alt: Oferă un text alternativ pentru o imagine, care este afișat
+          atunci când imaginea nu se poate încărca sau când utilizatorul
+          utilizează un cititor de ecran.
+        </li>
+        <li>id: Definește un identificator unic pentru un element.</li>
+        <li>class: Definește o clasă CSS pentru un element.</li>
+        <li>style: Definește stiluri CSS inline pentru un element.</li>
+      </ul>
+    </section>
+    <section>
+      <h3>Beneficiile utilizării HTML:</h3>
+      <ul>
+        <li>
+          <b>Simplu și ușor de învățat:</b> Sintaxa HTML este relativ simplă și
+          ușor de înțeles, făcând-o accesibilă persoanelor cu diferite niveluri
+          de experiență.
+        </li>
+        <li>
+          <b>Versatil:</b> HTML poate fi utilizat pentru a crea o gamă largă de
+          pagini web, de la site-uri web simple la aplicații web complexe.
+        </li>
+        <li>
+          <b>Fundal:</b> Setați o imagine de fundal pentru elemente. Decorare:
+          Controlați aspectul marginilor, liniilor și hyperlinkurilor.
+        </li>
+        <li>
+          <b>Standard:</b> HTML este un limbaj standardizat, asigurând
+          compatibilitatea cu toate browserele web majore.
+        </li>
+        <li>
+          <b>Baza pentru web:</b> HTML este limbajul fundamental al World Wide
+          Web și este esențial pentru crearea oricărei pagini web.
+        </li>
+      </ul>
+    </section>
+    <h3>Exemplu de cod HTML:</h3>
+    <img src="imagini/exemplu-cod.png" />
+    <p>
+      <b>Notă:</b> HTML este adesea utilizat împreună cu
+      <a href="pagini/css.html">CSS (Cascading Style Sheets)</a> pentru a
+      controla aspectul paginilor web. CSS definește stilurile elementelor HTML,
+      cum ar fi culori, fonturi, margini și spațiere.
+    </p>
+    <h3>Resurse suplimentare pentru a învăța HTML:</h3>
+    <ul>
       <li>
-        <a href="despre.html">Pagina despre pagina noastra</a>
+        <a class="font-italic" href="https://www.w3schools.com/html/"
+          >W3Schools - Tutorial HTML</a
+        >
       </li>
       <li>
-        <a href="/pagini/tabele.html">Detalii despre tabele</a>
+        <a
+          class="font-italic"
+          href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference"
+          >MDN Web Docs - HTML</a
+        >
       </li>
       <li>
-        <a href="pagini/formular.html">Formulare</a>
-      </li>
-      <li>
-        <a href="pagini/multimedia.html">Multimedia</a>
-      </li>
-      <li>
-        <a href="pagini/escape.html">Escape</a>
-      </li>
-      <li>
-        <a href="pagini/css.html">CSS</a>
+        <a class="font-italic" href="https://www.w3schools.com/html/"
+          >Codecademy - Curs interactiv HTML & CSS</a
+        >
       </li>
     </ul>
-    <h1>Prima pagina HTML</h1>
-    <hr />
-    <h2>Taguri si elemente populare in HTML</h2>
-    <div class="flex-container">
-      <p>
-        Un tag HTML este un cuvant sau o litera inconjurata de semnele mai mare
-        si mai mic. Aceste tag-uri sunt folosite la crearea de elemente HTML
-        precum paragrafe sau link-uri.
-      </p>
-      <p>
-        Multe elemente au un tag de deschidere si unul de inchidere — de exemplu
-        un paragraf are urmatoarea structura: un tag &lt;p&gt; ce il deschide,
-        textul paragrafului si tag-ul &lt;/p&gt; pentru a-l inchide. Unele
-        elemente nu au tag de inchidere, acestea fiind numite tag-uri goale{self
-        closing tags}. De exemplu, tag-ul &lt;br&gt; ce lasa un rand liber, se
-        scrie pur si simplu &lt;br&gt; unde vrei sa lasi un rand liber.
-      </p>
-    </div>
-    <div>
-      <img src="HTML-image.png" class="img-1" />
-    </div>
-    <h3>Cele mai importante tag-uri HTML</h3>
-    <h4>Tag-ul &lt;html&gt;</h4>
-    <div class="flex-container">
-      <p>
-        Toate paginile web incep cu acest element.
-        <a href="https://www.w3schools.com/tags/tag_html.asp"
-          >Tag-ul &lt;html&gt;</a
-        >
-        sta la baza unei pagini web. Acest tag se deschide la indeputul
-        documentului html si se inchide la sfarsit cu tag-ul &lt;/html&gt;.Tot
-        continutul paginii tale intra intre aceste 2 tag-uri.
-      </p>
-    </div>
-    <h4>Tag-ul &lt;head&gt;</h4>
-    <div class="flex-container">
-      <p>
-        Sectiunea
-        <a href="https://www.w3schools.com/tags/tag_head.asp">&lt;head&gt;</a>
-        contine informatii despre website, spre deosebire de continutul
-        paginilor web. In aceasta zona puteti pune o multime de elemente,
-        precum:
-      </p>
-      <ul>
-        <li>title - tilul paginii</li>
-        <li>link - folosit la adaugarea fisierelor .css si a favicon-ului</li>
-        <li>
-          meta - folosit la specificarea lucrurilor precum set de caractere,
-          descrierea paginii, cuvinte cheie, etc
-        </li>
-        <li>script – folosit la adaugarea de cod JavaScript</li>
-      </ul>
-    </div>
-    <h4>Tag-ul &lt;title&gt;</h4>
-    <div class="flex-container">
-      <p>
-        Acest element contine titlul paginii, acesta fiind afisat in bara de
-        titlu a browserului, precum sin bookmarks, rezultatele cautarilor pe
-        motoare de cautare si multe alte locuri.
-        <a href="https://www.w3schools.com/tags/tag_title.asp">Titlul</a>
-        trebuie sa descrie continutul paginii succint si precis. Incearca sa dai
-        fiecarei pagini un titlu unic.
-      </p>
-    </div>
-    <h4>Tag-ul &lt;body&gt;</h4>
-    <div class="flex-container">
-      <p>
-        Acest element,
-        <a href="https://www.w3schools.com/tags/tag_body.asp">&lt;body&gt;</a>,
-        apare imediat dupa elementul head (la inchiderea acestuia, deci dupa
-        &lt;/head&gt;). In interiorul acestui tag se pune tot continutul
-        website-ului (imagini, text, video, etc).
-      </p>
-    </div>
-    <h4>Tag-ul &lt;p&gt;</h4>
-    <div class="flex-container">
-      <ul>
-        <li>Unul dintre cele mai folosite taguri.</li>
-        <li>Unul dintre cele mai folosite taguri.</li>
-        <li>Este folosit pentru paragafe</li>
-      </ul>
-      <p>
-        Toate informatiile despre tag-ul &lt;p&gt;, sau cel putin o buna parte,
-        pot fi gasite pe
-        <a href="https://www.w3schools.com/tags/tag_p.asp">HTML &lt;p&gt; Tag</a
-        >.
-      </p>
-    </div>
-    <h4>Tag-ul &lt;header&gt;</h4>
-    <div class="flex-container">
-      <p>
-        Un alt element popular este
-        <a href="https://www.w3schools.com/tags/tag_header.asp"
-          >&lt;heading-ul&gt;</a
-        >. Headingurile pot fi de mai multe tipuri. Ele se diferentiaza prin
-        numere.
-      </p>
-    </div>
-    <div>
-      <p>Headingurile sunt de mai multe tipuri:</p>
-      <ol>
-        <li>&lt;h1&gt;</li>
-        <li>&lt;h2&gt;</li>
-        <li>&lt;h3&gt;</li>
-        <li>&lt;h4&gt;</li>
-        <li>&lt;h5&gt;</li>
-        <li>&lt;h6&gt;</li>
-      </ol>
-      <p>
-        Cel mai mare heading si cel mai important este h1, iar cel mai mic este
-        h6.
-      </p>
-      <p>
-        Toate informatiile despre &lt;header&gt;, sau cel putin o buna parte,
-        pot fi gasite pe
-        <a href="https://www.w3schools.com/tags/tag_header.asp"
-          >HTML &lt;header&gt; Tag</a
-        >.
-      </p>
-    </div>
-    <h4>Tag-ul &lt;span&gt;</h4>
-    <div class="flex-container">
-      <p>
-        Spanul este un subelement, folosit pentru a selecta si manipula un
-        cuvant o propozitie sau o fraza.
-      </p>
-      <p>
-        Toate informatiile despre &lt;span&gt;, sau cel putin o buna parte, pot
-        fi gasite pe
-        <a href="https://www.w3schools.com/tags/tag_span.asp"
-          >HTML &lt;span&gt; Tag</a
-        >.
-      </p>
-    </div>
-    <h4>Tag-ul &lt;a&gt;</h4>
-    <div class="flex-container">
-      <p>
-        Unul dintre cele mai importante elemente dintr-o pagina web este a,
-        acesta permitandu-ti sa creezi link-uri catre alte pagini (acestea pot
-        fi interne sau externe). Textul care sa fie transformat in link va fi
-        pus intre &lt;a&gt; si &lt;/a&gt;, iar adresa unde vrei sa te trimita in
-        atributul href ala cestuia.
-      </p>
-      <p>
-        Toate informatiile despre &lt;a&gt;, sau cel putin o buna parte, pot fi
-        gasite pe
-        <a href="https://www.w3schools.com/tags/tag_a.asp">HTML &lt;a&gt; Tag</a
-        >.
-      </p>
-    </div>
-    <h4>Tag-ul &lt;img&gt;</h4>
-    <div class="flex-container">
-      <p>
-        Tag-ul img iti permite adaugarea de imagini in pagina ta web. Pentru a
-        afisa o imagine trebuie sa o uploadezi undeva (host de imagini, server,
-        etc apoi sa folosesti tah-ul img si referinta la adresa imaginii).
-      </p>
-      <p>
-        Toate informatiile despre &lt;img&gt;, sau cel putin o buna parte, pot
-        fi gasite pe
-        <a href="https://www.w3schools.com/tags/tag_img.asp"
-          >HTML &lt;img&gt; Tag</a
-        >.
-      </p>
-    </div>
-    <h4>Tag-ul &lt;div&gt;</h4>
-    <div class="flex-container">
-      <p>
-        Elementul div este un container generic ce poate fi folosit petntru a
-        structura o pagina mai bine. De exemplu, poti grupa mai multe paragrafe
-        sau titluri ce sunt din aceasi categori. Aceste elemente div sunt
-        folosite pentru:
-      </p>
-      <ul>
-        <li>partea de sus/jos a website-ului</li>
-        <li>coloane de continut si meniuri laterale</li>
-        <li>link-uri</li>
-        <li>casuta de text</li>
-        <li>zone din design ce serversc un anumit scop</li>
-        <li>galerii</li>
-      </ul>
-    </div>
-    <p>
-      Toate informatiile despre &lt;div&gt;, sau cel putin o buna parte, pot fi
-      gasite pe
-      <a href="https://www.w3schools.com/tags/tag_div.asp">HTML &lt;a&gt; Tag</a
-      >.
-    </p>
-    <div>
-      <h4>Tag-ul &lt;ul&gt;</h4>
-      <p>
-        The &lt;ul&gt;tag defines an unordered (bulleted) list. Use this tag
-        together with the<a href="https://www.w3schools.com/tags/tag_li.asp">
-          &lt;li&gt;</a
-        >
-        tag to create unordered lists.
-      </p>
-    </div>
-    <div class="borderRed">
-      <h4>Tag-ul &lt;ol&gt;</h4>
-      <p>
-        The &lt;ol&gt; tag defines an ordered list. An ordered list can be
-        numerical or alphabetical.The &lt;li&gt; tag is used to define each list
-        item.
-      </p>
-    </div>
-    <div>
-      <h4>Tag-ul &lt;source&gt;</h4>
-      <p>
-        The &lt;source&gt; tag is used to specify multiple media resources for
-        media elements, such as
-        <a href="https://www.w3schools.com/tags/tag_video.asp">&lt;video&gt;</a>
-        ,
-        <a href="https://www.w3schools.com/tags/tag_audio.asp">&lt;audio&gt;</a>
-        ,
-        <a href="https://www.w3schools.com/tags/tag_picture.asp"
-          >&lt;picture&gt;</a
-        >
-        tag allows you to specify alternative video/audio/image files which the
-        browser may choose from, based on browser support or viewport width. The
-        browser will choose the first &lt;source&gt; it supports.
-      </p>
-    </div>
-    <div>
-      <h4>Tag-ul &lt;table&gt;</h4>
-      <p>
-        The
-        <a href="https://www.w3schools.com/tags/tag_table.asp"
-          >&lt;table&gt;
-        </a>
-        tag defines an HTML table. An HTML table consists of one &lt;table&gt;
-        element and one or more
-        <a href="https://www.w3schools.com/tags/tag_tr.asp">&lt;tr&gt;</a> ,
-        <a href="https://www.w3schools.com/tags/tag_th.asp">&lt;th&gt; </a> ,
-        and
-        <a href="https://www.w3schools.com/tags/tag_td.asp">&lt;td&gt;</a>
-        elements. The &lt;tr&gt; element defines a table row, the &lt;th&gt;
-        element defines a table header, and the &lt;td&gt; element defines a
-        table cell. An HTML table may also include
-        <a href="https://www.w3schools.com/tags/tag_caption.asp"
-          >&lt;caption&gt;</a
-        >
-        ,<a href="https://www.w3schools.com/tags/tag_colgroup.asp"
-          >&lt;colgroup&gt;</a
-        >
-        ,
-        <a href="https://www.w3schools.com/tags/tag_thead.asp">&lt;thead&gt;</a>
-        ,
-        <a href="https://www.w3schools.com/tags/tag_tfoot.asp">&lt;tfoot&gt;</a>
-        , and
-        <a href="https://www.w3schools.com/tags/tag_tbdody.asp"
-          >&lt;tbody&gt;</a
-        >
-        elements.
-      </p>
-    </div>
   </body>
 </html>
