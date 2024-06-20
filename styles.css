@@ -16,16 +16,18 @@ body {
   column-gap: 10px;
   margin-bottom: 0px;
   margin-top: 10px;
-  background-color: rgb(238, 223, 217);
+  background-color: rgb(188, 96, 96);
   padding: 10px;
   padding-left: 0px;
   position: sticky;
-  bottom: 5px;
-  z-index: 3;
+  /* bottom: 5px; */
+  /* z-index: 3; */
   font-style: italic;
   font-weight: 550;
   border: 1px;
   border-style: inset;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .navigation ul {
@@ -59,8 +61,14 @@ li a {
   color: black;
 }
 
+p a {
+  text-decoration: none;
+  color: black;
+}
+
 a:hover {
   color: rgb(58, 58, 162);
+  font-weight: bold;
 }
 
 table {
@@ -83,7 +91,7 @@ td {
   padding: 5px; /* Spațiu de 5px în jurul conținutului celulelor */
 }
 
-.different-table {
+.second-table {
   border: 4px solid #ccc; /* Bordură gri de 2 pixeli */
   width: 400px; /* Lățime de 500 pixeli */
   margin: 20px auto; /* Spațiu de 20px în jurul tabelului, centrat automat */
@@ -91,14 +99,14 @@ td {
   background-color: #c07c7c; /* Culoare de fundal #f9f9f9 */
 }
 
-.different-table > th {
+.second-table > th {
   font-weight: bold; /* Fontul titlurilor este mai gros */
   background-color: #a82424; /* Culoare de fundal #e6e6e6 pentru titluri */
   text-align: center; /* Textul titlurilor este centrat */
   padding: 5px; /* Spațiu de 5px în jurul conținutului titlurilor */
 }
 
-.different-table > td {
+.second-table > td {
   border: 1px solid #ddd; /* Bordură gri de 1 pixel pentru celule */
   padding: 5px; /* Spațiu de 5px în jurul conținutului celulelor */
 }
@@ -108,6 +116,7 @@ td {
   width: 400;
   margin: 10px 500px;
   display: flex;
+  border: inset;
 }
 
 .git-image {
@@ -115,7 +124,8 @@ td {
   width: 500;
   margin: 5px 500px;
 }
-0 .another-image {
+
+.another-image {
   height: 250;
   width: 400;
   margin: 8px 150px;
@@ -128,6 +138,12 @@ td {
   border: #0b0909 2px solid;
   font-style: italic;
   padding: 2px;
+}
+
+span {
+  background-color: #c3bdbd;
+  /* font-style: bold; */
+  padding: 0px;
 }
 
 @media screen and (max-width: 1200px) {
