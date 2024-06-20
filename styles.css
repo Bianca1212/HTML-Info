@@ -20,6 +20,7 @@ body {
   padding: 10px;
   padding-left: 0px;
   position: sticky;
+  top: 0;
   /* bottom: 5px; */
   /* z-index: 3; */
   font-style: italic;
